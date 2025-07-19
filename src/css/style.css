@@ -247,3 +247,19 @@ form textarea {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
+
+.footer-social {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.footer-social a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-social a:hover {
+  color: var(--accent-color);
+}
+
