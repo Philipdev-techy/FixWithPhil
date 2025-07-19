@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 - Page Not Found | FixWithPhil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/style.css">
+  <style>
+    .not-found {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 1rem;
+      min-height: 80vh;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .not-found img {
+      max-width: 300px;
+      margin-bottom: 2rem;
+      border-radius: 16px;
+    }
+
+    .not-found h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .not-found p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .not-found a {
+      padding: 0.8rem 1.5rem;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .not-found a:hover {
+      background-color: #0056b3;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="not-found-page">
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="not-found">
+    <img src="https://cdn-icons-png.flaticon.com/512/2748/2748558.png" alt="Page Not Found Icon">
+    <h1>404 - Page Not Found</h1>
+    <p>Sorry, we couldn't find the page you were looking for.</p>
+    <a href="index.html">🔙 Back to Homepage</a>
+  </main>
+</body>
+</html>

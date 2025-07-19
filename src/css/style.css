@@ -214,3 +214,36 @@ form textarea {
 .dark-mode .read-more {
   color: #90caf9;
 }
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+}
+
+.post-nav a {
+  color: #007acc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.post-nav a:hover {
+  text-decoration: underline;
+}
+
+.not-found-page main {
+  max-width: 600px;
+  margin: auto;
+}
+
+.not-found-page h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.not-found-page p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}

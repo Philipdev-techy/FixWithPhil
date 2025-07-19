@@ -19,7 +19,7 @@
   </nav>
 
   <main>
-    <h1 style="text-align: center;">Blog Posts</h1>
+    <h1 class="center-text">📘 Blog Posts</h1>
 
     <input 
       type="text" 
@@ -30,6 +30,8 @@
     >
 
     <div class="blog-list">
+
+      <!-- Linux Commands Post -->
       <div class="blog-card">
         <img src="https://images.unsplash.com/photo-1614064548237-096f735f344f?auto=format&fit=crop&w=800&q=80" alt="Linux Commands">
         <h3><a href="./post/Linux-Commands.html">10 Linux Commands Every Beginner Should Know</a></h3>
@@ -37,6 +39,7 @@
         <a href="./post/Linux-Commands.html" class="read-more">Read More</a>
       </div>
 
+      <!-- Terminal Post -->
       <div class="blog-card">
         <img src="https://cdn.pixabay.com/photo/2014/12/30/05/42/source-code-583537_1280.jpg" alt="Terminal">
         <h3><a href="./post/how-to-use-terminal.html">How to Use Terminal Like a Pro</a></h3>
@@ -44,12 +47,14 @@
         <a href="./post/how-to-use-terminal.html" class="read-more">Read More</a>
       </div>
 
+      <!-- DevOps Post -->
       <div class="blog-card">
         <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="DevOps Guide">
         <h3><a href="./post/understanding-devops.html">Understanding DevOps: A Beginner’s Guide</a></h3>
         <p class="post-meta">Published: July 15, 2025 | Tags: DevOps, Beginner</p>
         <a href="./post/understanding-devops.html" class="read-more">Read More</a>
       </div>
+
     </div>
   </main>
 
@@ -59,8 +64,7 @@
       const input = document.getElementById('searchInput').value.toLowerCase();
       const cards = document.querySelectorAll('.blog-card');
       cards.forEach(card => {
-        const match = card.textContent.toLowerCase().includes(input);
-        card.style.display = match ? 'block' : 'none';
+        card.style.display = card.textContent.toLowerCase().includes(input) ? 'block' : 'none';
       });
     }
 
@@ -69,7 +73,6 @@
       localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
     }
 
-    // On load, check if dark mode was previously enabled
     window.onload = () => {
       if (localStorage.getItem('darkMode') === 'true') {
         document.body.classList.add('dark-mode');
