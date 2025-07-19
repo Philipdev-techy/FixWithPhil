@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - FixWithPhil</title>
+  <title>Projects - FixWithPhil</title>
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  <button onclick="toggleDarkMode()" style="margin: 15px;">🌙 Toggle Dark Mode</button>
-
   <nav style="background-color: #0d6efd; padding: 10px; text-align: center;">
     <a href="index.html" style="color: white; margin: 0 15px;">Home</a>
     <a href="about.html" style="color: white; margin: 0 15px;">About</a>
@@ -18,21 +16,33 @@
     <a href="contact.html" style="color: white; margin: 0 15px;">Contact</a>
   </nav>
 
-  <main style="padding: 20px;">
-    <h1>About Me</h1>
-    <p>My name is Philip. I’m an IT Support Specialist learning Linux, Cloud, and DevOps.</p>
-    <p>I created <strong>FixWithPhil</strong> to share my journey and help beginners in tech.</p>
-    <p>I focus on practical tech fixes, Linux tutorials, and breaking down complex tools in simple ways.</p>
+  <header>
+    <h1>My Projects</h1>
+    <p>Here are some things I've worked on.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>FixWithPhil Blog</h2>
+      <p>A tech blog to help beginners with Linux, DevOps, and troubleshooting.</p>
+      <a href="blog.html">View Blog</a>
+    </section>
+
+    <section>
+      <h2>Bash Scripts</h2>
+      <p>Simple shell scripts I've written to automate tasks.</p>
+      <a href="#">(Add GitHub or Pastebin link here)</a>
+    </section>
+
+    <section>
+      <h2>DevOps Practice</h2>
+      <p>My learning journey and small DevOps projects, like Docker setup or Linux tweaks.</p>
+      <a href="#">(Link to repo or writeups)</a>
+    </section>
   </main>
 
-  <footer style="text-align: center; padding: 20px;">
+  <footer>
     &copy; 2025 FixWithPhil. All rights reserved.
   </footer>
-
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
-    }
-  </script>
 </body>
 </html>

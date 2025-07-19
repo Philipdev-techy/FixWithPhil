@@ -1,35 +1,216 @@
+/* ---------- Base Styles ---------- */
 body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #0d6efd;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    main {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    section {
-      background-color: white;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #eee;
-      font-size: 14px;
-    }
-    a {
-      color: #0d6efd;
-      text-decoration: none;
-    }
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #0b5ed7;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 15px;
+}
+
+/* ---------- Header & Nav ---------- */
+header {
+  background-color: #0d6efd;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+  background-color: #0d6efd;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+/* ---------- Main & Sections ---------- */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+section h2 {
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #eee;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 40px;
+}
+
+/* ---------- Buttons ---------- */
+button,
+form button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+button:hover,
+form button:hover {
+  background-color: #0b5ed7;
+}
+
+/* ---------- Forms ---------- */
+form {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* ---------- Search ---------- */
+#searchInput {
+  padding: 8px;
+  width: 80%;
+  margin: 20px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* ---------- Blog Cards ---------- */
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+.blog-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+.blog-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.blog-card a {
+  color: #0d6efd;
+  font-weight: bold;
+  font-size: 18px;
+}
+.blog-card p {
+  color: #555;
+  margin-top: 8px;
+}
+
+/* ---------- Read More Link Style ---------- */
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0d6efd;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* ---------- Dark Mode ---------- */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0; /* Improved contrast */
+}
+.dark-mode nav,
+.dark-mode header,
+.dark-mode footer,
+.dark-mode section {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+}
+.dark-mode a {
+  color: #90caf9;
+}
+.dark-mode a:hover {
+  color: #bbdefb;
+}
+.dark-mode button,
+.dark-mode .read-more-btn {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+.dark-mode button:hover,
+.dark-mode .read-more-btn:hover {
+  background-color: #444;
+}
+.dark-mode-toggle {
+  margin: 15px;
+}
+.dark-mode section h2 {
+  color: #90caf9;
+}
+.dark-mode footer {
+  color: #ccc;
+}
+
+/* ---------- Dark Mode Form/Input Fix ---------- */
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #2a2a2a;
+  color: #f4f4f4;
+  border: 1px solid #555;
+}
+
+/* ---------- Dark Mode Read More Fix ---------- */
+.dark-mode .read-more {
+  color: #90caf9;
+}

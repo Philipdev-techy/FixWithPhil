@@ -1,22 +1,81 @@
-<!-- blog.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Blog - FixWithPhil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  <!-- Include your nav bar here -->
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <button onclick="toggleDarkMode()" class="dark-toggle">🌓 Toggle Dark Mode</button>
+  </nav>
 
   <main>
-    <h1>Blog Posts</h1>
-    <ul>
-      <li><a href="./post/Linux-Commands.html">10 Linux Commands Every Beginner Should Know</a></li>
-      <li><a href="./post/how-to-use-terminal.html">How to Use Terminal Like a Pro</a></li>
-      <li><a href="./post/understanding-devops.html">Understanding DevOps: A Beginner’s Guide</a></li>
-      
+    <h1 style="text-align: center;">Blog Posts</h1>
 
-    </ul>
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="🔍 Search blog posts..." 
+      onkeyup="filterPosts()" 
+      class="search-input"
+    >
+
+    <div class="blog-list">
+      <div class="blog-card">
+        <img src="https://images.unsplash.com/photo-1614064548237-096f735f344f?auto=format&fit=crop&w=800&q=80" alt="Linux Commands">
+        <h3><a href="./post/Linux-Commands.html">10 Linux Commands Every Beginner Should Know</a></h3>
+        <p class="post-meta">Published: July 10, 2025 | Tags: Linux, Commands</p>
+        <a href="./post/Linux-Commands.html" class="read-more">Read More</a>
+      </div>
+
+      <div class="blog-card">
+        <img src="https://cdn.pixabay.com/photo/2014/12/30/05/42/source-code-583537_1280.jpg" alt="Terminal">
+        <h3><a href="./post/how-to-use-terminal.html">How to Use Terminal Like a Pro</a></h3>
+        <p class="post-meta">Published: July 12, 2025 | Tags: Terminal, Tips</p>
+        <a href="./post/how-to-use-terminal.html" class="read-more">Read More</a>
+      </div>
+
+      <div class="blog-card">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="DevOps Guide">
+        <h3><a href="./post/understanding-devops.html">Understanding DevOps: A Beginner’s Guide</a></h3>
+        <p class="post-meta">Published: July 15, 2025 | Tags: DevOps, Beginner</p>
+        <a href="./post/understanding-devops.html" class="read-more">Read More</a>
+      </div>
+    </div>
   </main>
+
+  <!-- JavaScript -->
+  <script>
+    function filterPosts() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.blog-card');
+      cards.forEach(card => {
+        const match = card.textContent.toLowerCase().includes(input);
+        card.style.display = match ? 'block' : 'none';
+      });
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    }
+
+    // On load, check if dark mode was previously enabled
+    window.onload = () => {
+      if (localStorage.getItem('darkMode') === 'true') {
+        document.body.classList.add('dark-mode');
+      }
+    };
+  </script>
+
 </body>
 </html>
