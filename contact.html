@@ -5,7 +5,9 @@
   <title>Contact - FixWithPhil</title>
   <link rel="stylesheet" href="src/css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P7WHWV6CE"></script>
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P7WHWV6CE"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -17,11 +19,11 @@
 
   <!-- Navigation Bar -->
   <nav style="background-color: #0d6efd; padding: 10px; text-align: center;">
-    <a href="index.html" style="color: white; margin: 0 15px;">Home</a>
-    <a href="about.html" style="color: white; margin: 0 15px;">About</a>
-    <a href="resume.html" style="color: white; margin: 0 15px;">Resume</a>
-    <a href="blog.html" style="color: white; margin: 0 15px;">Blog</a>
-    <a href="contact.html" style="color: white; margin: 0 15px;">Contact</a>
+    <a href="index.html" style="color: white; margin: 0 15px;" onclick="gtag('event', 'click', { event_category: 'navigation', event_label: 'Home' });">Home</a>
+    <a href="about.html" style="color: white; margin: 0 15px;" onclick="gtag('event', 'click', { event_category: 'navigation', event_label: 'About' });">About</a>
+    <a href="resume.html" style="color: white; margin: 0 15px;" onclick="gtag('event', 'click', { event_category: 'navigation', event_label: 'Resume' });">Resume</a>
+    <a href="blog.html" style="color: white; margin: 0 15px;" onclick="gtag('event', 'click', { event_category: 'navigation', event_label: 'Blog' });">Blog</a>
+    <a href="contact.html" style="color: white; margin: 0 15px;" onclick="gtag('event', 'click', { event_category: 'navigation', event_label: 'Contact' });">Contact</a>
     <button onclick="toggleDarkMode()" style="margin-left: 15px; padding: 6px 12px; background: #ffc107; border: none; border-radius: 5px;">🌓 Toggle Dark Mode</button>
   </nav>
 
@@ -35,23 +37,24 @@
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
+        <button type="submit" onclick="gtag('event', 'submit', { event_category: 'form', event_label: 'Contact Form' });">Send</button>
       </form>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer style="text-align: center; padding: 20px;">
     &copy; 2025 FixWithPhil. All rights reserved.
     <h2>Connect with Me</h2>
-<p>
-  You can find more of my work on 
-  <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-  or connect professionally on 
-  <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>.
-</p>
-<a href="mailto:philipdeveloper96@gmail.com" onclick="gtag('event', 'contact_click', { event_category: 'engagement', event_label: 'email_footer' });">
-  philipdeveloper96@gmail.com
-</a>
-
+    <p>
+      You can find more of my work on 
+      <a href="https://github.com/yourusername" target="_blank" onclick="gtag('event', 'click', { event_category: 'social', event_label: 'GitHub' });">GitHub</a>
+      or connect professionally on 
+      <a href="https://linkedin.com/in/yourusername" target="_blank" onclick="gtag('event', 'click', { event_category: 'social', event_label: 'LinkedIn' });">LinkedIn</a>.
+    </p>
+    <a href="mailto:philipdeveloper96@gmail.com" onclick="gtag('event', 'click', { event_category: 'engagement', event_label: 'Email Footer' });">
+      philipdeveloper96@gmail.com
+    </a>
   </footer>
 
   <script>

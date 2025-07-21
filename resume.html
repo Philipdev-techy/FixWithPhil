@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Resume - FixWithPhil</title>
-  <link rel="stylesheet" href="./src/css/style.css">
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P7WHWV6CE"></script>
+  <link rel="stylesheet" href="./src/css/style.css" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P7WHWV6CE"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -21,18 +23,17 @@
 
   <!-- Navigation -->
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="resume.html">Resume</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-  <!-- Dark Mode Toggle -->
-  <div class="dark-mode-toggle" style="text-align: center;">
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-  </div>
+    <a href="index.html" onclick="gtag('event', 'nav_click', { event_category: 'navigation', event_label: 'Home' });">Home</a>
+    <a href="about.html" onclick="gtag('event', 'nav_click', { event_category: 'navigation', event_label: 'About' });">About</a>
+    <a href="resume.html" onclick="gtag('event', 'nav_click', { event_category: 'navigation', event_label: 'Resume' });">Resume</a>
+    <a href="blog.html" onclick="gtag('event', 'nav_click', { event_category: 'navigation', event_label: 'Blog' });">Blog</a>
+    <a href="contact.html" onclick="gtag('event', 'nav_click', { event_category: 'navigation', event_label: 'Contact' });">Contact</a>
+    
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle" style="text-align: center;">
+      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
   </nav>
-
-  
 
   <main>
     <section>
@@ -55,23 +56,34 @@
 
     <section>
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:philipdeveloper96@gmail.com">philipdeveloper96@gmail.com</a></p>
+      <p>Email: 
+        <a href="mailto:philipdeveloper96@gmail.com" 
+           onclick="gtag('event', 'contact_click', { event_category: 'engagement', event_label: 'email_contact_section' });">
+           philipdeveloper96@gmail.com
+        </a>
+      </p>
     </section>
   </main>
 
   <footer style="text-align: center; padding: 20px;">
     &copy; 2025 FixWithPhil. All rights reserved.
     <h2>Connect with Me</h2>
-<p>
-  You can find more of my work on 
-  <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-  or connect professionally on 
-  <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>.
-</p>
-<a href="mailto:philipdeveloper96@gmail.com" onclick="gtag('event', 'contact_click', { event_category: 'engagement', event_label: 'email_footer' });">
-  philipdeveloper96@gmail.com
-</a>
-
+    <p>
+      You can find more of my work on 
+      <a href="https://github.com/Philipdev-techy" target="_blank" rel="noopener noreferrer"
+         onclick="gtag('event', 'external_link_click', { event_category: 'external', event_label: 'GitHub' });">
+        GitHub
+      </a>
+      or connect professionally on 
+      <a href="https://linkedin.com/in/philip-atabo-3a279828a" target="_blank" rel="noopener noreferrer"
+         onclick="gtag('event', 'external_link_click', { event_category: 'external', event_label: 'LinkedIn' });">
+        LinkedIn
+      </a>.
+    </p>
+    <a href="mailto:philipdeveloper96@gmail.com" 
+       onclick="gtag('event', 'contact_click', { event_category: 'engagement', event_label: 'email_footer' });">
+      philipdeveloper96@gmail.com
+    </a>
   </footer>
 
   <!-- JavaScript for Dark Mode -->
@@ -81,13 +93,11 @@
       localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
     }
 
-    // Load saved dark mode preference
     window.onload = function () {
       if (localStorage.getItem('darkMode') === 'true') {
         document.body.classList.add('dark-mode');
       }
     };
   </script>
-
 </body>
 </html>

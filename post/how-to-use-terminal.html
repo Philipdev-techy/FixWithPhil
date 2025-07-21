@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>How to Use Terminal Like a Pro</title>
-  <link rel="stylesheet" href="../src/css/style.css">
+  <meta name="description" content="Learn powerful terminal commands to boost your productivity as a tech beginner." />
+  <link rel="stylesheet" href="../src/css/style.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P7WHWV6CE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4P7WHWV6CE');
+  </script>
 </head>
 <body>
-  <nav>
-    <a href="../index.html">Home</a> |
-    <a href="../about.html">About</a> |
-    <a href="../resume.html">Resume</a> |
-    <a href="../blog.html">Blog</a> |
-    <a href="../contact.html">Contact</a>
+
+  <nav style="background-color: #0d6efd; padding: 10px; text-align: center;">
+    <a href="../index.html" style="color: white; margin: 0 10px;"
+       onclick="gtag('event', 'click', { 'event_category': 'navigation', 'event_label': 'Home' });">Home</a>
+    <a href="../about.html" style="color: white; margin: 0 10px;"
+       onclick="gtag('event', 'click', { 'event_category': 'navigation', 'event_label': 'About' });">About</a>
+    <a href="../resume.html" style="color: white; margin: 0 10px;"
+       onclick="gtag('event', 'click', { 'event_category': 'navigation', 'event_label': 'Resume' });">Resume</a>
+    <a href="../blog.html" style="color: white; margin: 0 10px;"
+       onclick="gtag('event', 'click', { 'event_category': 'navigation', 'event_label': 'Blog' });">Blog</a>
+    <a href="../contact.html" style="color: white; margin: 0 10px;"
+       onclick="gtag('event', 'click', { 'event_category': 'navigation', 'event_label': 'Contact' });">Contact</a>
   </nav>
 
-  <main>
+  <main style="padding: 20px; max-width: 800px; margin: auto;">
     <h1>How to Use Terminal Like a Pro</h1>
-    <img src="../src/images/select-profile-dropdown.png" alt="Terminal Example" style="max-width:100%; border-radius: 8px;">
+    <img src="../src/images/select-profile-dropdown.png" alt="Terminal Example"
+         style="max-width:100%; border-radius: 8px;" />
 
     <p><em>Posted on July 12, 2025</em></p>
 
@@ -29,10 +48,14 @@
       <li>Try creating aliases for long commands</li>
     </ul>
 
-    <div class="post-nav">
-      <a href="Linux-Commands.html" class="prev">← Previous</a>
-      <a href="understanding-devops.html" class="next">Next →</a>
+    <div class="post-nav" style="margin-top: 30px;">
+      <a href="Linux-Commands.html" class="prev" 
+         onclick="gtag('event', 'click', { 'event_category': 'post_navigation', 'event_label': 'Previous - Linux Commands' });">← Previous</a>
+      |
+      <a href="understanding-devops.html" class="next"
+         onclick="gtag('event', 'click', { 'event_category': 'post_navigation', 'event_label': 'Next - Understanding DevOps' });">Next →</a>
     </div>
   </main>
+
 </body>
 </html>
