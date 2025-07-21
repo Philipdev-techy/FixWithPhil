@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About - FixWithPhil</title>
-  <meta name="description" content="Learn more about Philip Atabo, an IT Support Specialist exploring Linux, Cloud, and DevOps on FixWithPhil.">
-  <link rel="stylesheet" href="src/css/style.css">
+  <meta name="description" content="Meet Philip Atabo, an IT Support Specialist sharing practical guides on Linux, Cloud, and DevOps via FixWithPhil." />
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="icon" href="src/images/favicon.ico" type="image/x-icon" />
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P7WHWV6CE"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-4P7WHWV6CE');
   </script>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <a href="index.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'});">Home</a>
-    <a href="about.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'About'});">About</a>
-    <a href="resume.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Resume'});">Resume</a>
-    <a href="blog.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Blog'});">Blog</a>
-    <a href="projects.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Projects'});">Projects</a>
-    <a href="contact.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'});">Contact</a>
-    <button onclick="toggleDarkMode(); gtag('event', 'toggle_dark_mode', {event_category: 'interaction'});" class="dark-toggle" aria-label="Toggle dark mode">🌙 Toggle Dark Mode</button>
-  </nav>
+  <!-- Skip to content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <main style="padding: 20px;">
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="index.html" onclick="gtag('event', 'nav_click', { event_category: 'navigation', event_label: 'Home' });">Home</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="blog.html">Blog</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="toggleDarkMode(); gtag('event', 'toggle_dark_mode', { event_category: 'interaction' });"
+              class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" style="padding: 20px;">
     <h1>👨‍💻 About Me</h1>
-    <p>Hi, I’m <strong>Philip Atabo</strong>, an IT Support Specialist diving into the world of Linux, Cloud, and DevOps.</p>
-    <p>I started <strong>FixWithPhil</strong> to document my journey and make tech topics simple and practical for beginners like you.</p>
-    <p>Whether you're stuck with terminal commands or trying to understand cloud tools, I'm here to help you fix it—with Phil.</p>
+    <p>Hi, I’m <strong>Philip Atabo</strong>, an IT Support Specialist exploring Linux, Cloud, and DevOps.</p>
+    <p>I launched <strong>FixWithPhil</strong> to simplify tech for beginners through practical blogs, tips, and tutorials.</p>
+    <p>Whether you're stuck on a terminal command or trying to deploy your first app, I'm here to help you fix it — with Phil.</p>
   </main>
 
+  <!-- Footer -->
   <footer style="text-align: center; padding: 20px;">
-    &copy; 2025 FixWithPhil. All rights reserved.
+    <p>&copy; 2025 FixWithPhil. All rights reserved.</p>
+
     <h2>Connect with Me</h2>
     <p>
-      Find more on 
-      <a href="https://github.com/philipdev-techy" target="_blank" onclick="gtag('event', 'click', { event_category: 'social', event_label: 'GitHub' });" aria-label="GitHub profile">GitHub</a> or connect on 
-      <a href="https://linkedin.com/in/philip-atabo-3a279828a" target="_blank" onclick="gtag('event', 'click', { event_category: 'social', event_label: 'LinkedIn' });" aria-label="LinkedIn profile">LinkedIn</a>.
+      Follow me on 
+      <a href="https://github.com/philipdev-techy" target="_blank" rel="noopener" aria-label="Visit GitHub profile">GitHub</a> 
+      and 
+      <a href="https://linkedin.com/in/philip-atabo-3a279828a" target="_blank" rel="noopener" aria-label="Visit LinkedIn profile">LinkedIn</a>.
     </p>
-    <a href="mailto:philipdeveloper96@gmail.com" onclick="gtag('event', 'contact_click', { event_category: 'engagement', event_label: 'Email Footer' });">
-      philipdeveloper96@gmail.com
-    </a>
+
+    <p>
+      Or email me at 
+      <a href="mailto:philipdeveloper96@gmail.com" onclick="gtag('event', 'contact_click', { event_category: 'engagement', event_label: 'Email Footer' });">
+        philipdeveloper96@gmail.com
+      </a>
+    </p>
   </footer>
 
   <!-- Dark Mode Script -->

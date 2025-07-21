@@ -4,7 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects - FixWithPhil</title>
+  <meta name="description" content="Explore Philip Atabo's hands-on projects on Linux, Bash scripting, and DevOps from the FixWithPhil blog." />
+  <meta name="keywords" content="Philip Atabo, FixWithPhil projects, DevOps, Bash scripts, Linux, beginner tech projects" />
+  <meta name="author" content="Philip Atabo" />
+  <meta property="og:title" content="Projects - FixWithPhil" />
+  <meta property="og:description" content="Explore real-world Linux and DevOps projects from Philip Atabo's learning journey." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fixwithphil.github.io/projects.html" />
+  <meta property="og:image" content="https://fixwithphil.github.io/assets/og-image.png" />
   <link rel="stylesheet" href="src/css/style.css" />
+
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P7WHWV6CE"></script>
   <script>
@@ -13,70 +22,70 @@
     gtag('js', new Date());
     gtag('config', 'G-4P7WHWV6CE');
   </script>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Projects - FixWithPhil",
+    "url": "https://fixwithphil.github.io/projects.html",
+    "description": "Explore Linux and DevOps projects from Philip Atabo, including shell scripts, blog tutorials, and learning logs."
+  }
+  </script>
 </head>
 <body>
   <!-- Navigation -->
-  <nav style="background-color: #0d6efd; padding: 10px; text-align: center;">
-    <a href="index.html" style="color: white; margin: 0 15px;" 
-       onclick="gtag('event', 'nav_click', { event_category: 'navigation', event_label: 'Home' });">Home</a>
-    <a href="about.html" style="color: white; margin: 0 15px;" 
-       onclick="gtag('event', 'nav_click', { event_category: 'navigation', event_label: 'About' });">About</a>
-    <a href="resume.html" style="color: white; margin: 0 15px;" 
-       onclick="gtag('event', 'nav_click', { event_category: 'navigation', event_label: 'Resume' });">Resume</a>
-    <a href="blog.html" style="color: white; margin: 0 15px;" 
-       onclick="gtag('event', 'nav_click', { event_category: 'navigation', event_label: 'Blog' });">Blog</a>
-    <a href="projects.html" style="color: white; margin: 0 15px;" 
-       onclick="gtag('event', 'nav_click', { event_category: 'navigation', event_label: 'Projects' });">Projects</a>
-    <a href="contact.html" style="color: white; margin: 0 15px;" 
-       onclick="gtag('event', 'nav_click', { event_category: 'navigation', event_label: 'Contact' });">Contact</a>
-
-    <!-- Dark Mode Toggle -->
-    <button onclick="toggleDarkMode()" style="margin-left: 15px;">Toggle Dark Mode</button>
+  <nav class="navbar">
+    <a href="index.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'});">Home</a>
+    <a href="about.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'About'});">About</a>
+    <a href="resume.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Resume'});">Resume</a>
+    <a href="blog.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Blog'});">Blog</a>
+    <a href="projects.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Projects'});">Projects</a>
+    <a href="contact.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'});">Contact</a>
+    <button onclick="toggleDarkMode(); gtag('event', 'toggle_dark_mode', {event_category: 'interaction'});" class="dark-toggle" aria-label="Toggle dark mode">🌙 Toggle Dark Mode</button>
   </nav>
 
-  <header>
-    <h1>My Projects</h1>
-    <p>Here are some things I've worked on.</p>
+  <header style="text-align: center; padding: 20px;">
+    <h1>🛠️ My Projects</h1>
+    <p>Discover the things I've built or contributed to as I grow in tech.</p>
   </header>
 
-  <main>
+  <main style="padding: 20px;">
     <section>
       <h2>FixWithPhil Blog</h2>
-      <p>A tech blog to help beginners with Linux, DevOps, and troubleshooting.</p>
-      <a href="blog.html" 
+      <p>A blog where I simplify Linux and DevOps concepts for beginners.</p>
+      <a href="blog.html" aria-label="Visit my blog"
          onclick="gtag('event', 'project_click', { event_category: 'projects', event_label: 'FixWithPhil Blog' });">
-         View Blog</a>
+         ➜ View Blog</a>
     </section>
 
     <section>
       <h2>Bash Scripts</h2>
-      <p>Simple shell scripts I've written to automate tasks.</p>
-      <a href="#" 
+      <p>Shell scripts for automating Linux tasks like backups, updates, and permissions.</p>
+      <a href="https://github.com/Philipdev-techy/bash-scripts" target="_blank" aria-label="Bash Scripts GitHub"
          onclick="gtag('event', 'project_click', { event_category: 'projects', event_label: 'Bash Scripts' });">
-         (Add GitHub or Pastebin link here)</a>
+         ➜ View on GitHub</a>
     </section>
 
     <section>
-      <h2>DevOps Practice</h2>
-      <p>My learning journey and small DevOps projects, like Docker setup or Linux tweaks.</p>
-      <a href="#" 
+      <h2>DevOps Practice Projects</h2>
+      <p>Experiments and mini-projects using Docker, Linux CLI, and CI/CD concepts.</p>
+      <a href="https://github.com/Philipdev-techy/devops-practice" target="_blank" aria-label="DevOps repo"
          onclick="gtag('event', 'project_click', { event_category: 'projects', event_label: 'DevOps Practice' });">
-         (Link to repo or writeups)</a>
+         ➜ View on GitHub</a>
     </section>
   </main>
 
-  <footer class="site-footer" style="text-align: center; padding: 20px; background-color: #f0f0f0;">
+  <footer style="text-align: center; padding: 20px;">
     <p>© 2025 FixWithPhil. All rights reserved.</p>
     <p>
-      <a href="https://github.com/Philipdev-techy" target="_blank"
-         onclick="gtag('event', 'external_link_click', { event_category: 'external', event_label: 'GitHub' });">
-        GitHub</a> |
-      <a href="https://linkedin.com/in/philip-atabo-3a279828a" target="_blank"
-         onclick="gtag('event', 'external_link_click', { event_category: 'external', event_label: 'LinkedIn' });">
-        LinkedIn</a> |
-      <a href="mailto:philipdeveloper96@gmail.com" 
-         onclick="gtag('event', 'contact_click', { event_category: 'engagement', event_label: 'email_footer' });">
-        philipdeveloper96@gmail.com</a>
+      <a href="https://github.com/philipdev-techy" target="_blank" aria-label="GitHub profile"
+         onclick="gtag('event', 'external_link_click', { event_category: 'external', event_label: 'GitHub' });">GitHub</a> |
+      <a href="https://linkedin.com/in/philip-atabo-3a279828a" target="_blank" aria-label="LinkedIn profile"
+         onclick="gtag('event', 'external_link_click', { event_category: 'external', event_label: 'LinkedIn' });">LinkedIn</a> |
+      <a href="mailto:philipdeveloper96@gmail.com" aria-label="Email Philip"
+         onclick="gtag('event', 'contact_click', { event_category: 'engagement', event_label: 'email_footer' });">philipdeveloper96@gmail.com</a>
     </p>
   </footer>
 

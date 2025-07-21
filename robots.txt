@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://philipdev-techy.github.io/FixWithPhil/sitemap.xml
