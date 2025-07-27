@@ -2,16 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Blog - FixWithPhil</title>
+  <title>Blog Posts | FixWithPhil - DevOps, Linux & Terminal Guides</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Meta Tags -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore helpful blog posts on Linux, Terminal, and DevOps for beginners on FixWithPhil.">
+  <meta name="description" content="Explore helpful blog posts on Linux, Terminal, and DevOps for beginners at FixWithPhil. Learn commands, tips, and best practices.">
+  <meta name="keywords" content="DevOps blog, Linux commands, Terminal tips, FixWithPhil, beginner guides">
+  <meta name="author" content="Philip Atabo">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="src/css/style.css">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P7WHWV6CE"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-4P7WHWV6CE');
   </script>
@@ -19,11 +31,11 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main navigation">
     <a href="index.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'});">Home</a>
     <a href="about.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'About'});">About</a>
     <a href="resume.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Resume'});">Resume</a>
-    <a href="blog.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Blog'});">Blog</a>
+    <a href="blog.html" aria-current="page">Blog</a>
     <a href="projects.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Projects'});">Projects</a>
     <a href="contact.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'});">Contact</a>
     <button onclick="toggleDarkMode(); gtag('event', 'toggle_dark_mode', {event_category: 'interaction'});" class="dark-toggle" aria-label="Toggle dark mode">🌙 Toggle Dark Mode</button>
@@ -33,6 +45,7 @@
   <main style="padding: 20px;">
     <h1 class="center-text">📘 Blog Posts</h1>
 
+    <!-- Blog Search -->
     <input 
       type="text" 
       id="searchInput" 
@@ -42,14 +55,15 @@
       aria-label="Search blog posts"
     >
 
-    <section class="blog-list">
+    <!-- Blog Entries -->
+    <section class="blog-list" aria-label="List of blog posts">
 
       <!-- Linux Commands Post -->
       <article class="blog-card">
         <img src="https://images.unsplash.com/photo-1614064548237-096f735f344f?auto=format&fit=crop&w=800&q=80" alt="Linux terminal illustration">
         <h3><a href="./post/Linux-Commands.html">10 Linux Commands Every Beginner Should Know</a></h3>
         <p class="post-meta">Published: July 10, 2025 | Tags: Linux, Commands</p>
-        <a href="./post/Linux-Commands.html" class="read-more">Read More</a>
+        <a href="./post/Linux-Commands.html" class="read-more" aria-label="Read more about Linux Commands">Read More</a>
       </article>
 
       <!-- Terminal Post -->
@@ -57,15 +71,15 @@
         <img src="https://cdn.pixabay.com/photo/2014/12/30/05/42/source-code-583537_1280.jpg" alt="Source code on terminal">
         <h3><a href="./post/how-to-use-terminal.html">How to Use Terminal Like a Pro</a></h3>
         <p class="post-meta">Published: July 12, 2025 | Tags: Terminal, Tips</p>
-        <a href="./post/how-to-use-terminal.html" class="read-more">Read More</a>
+        <a href="./post/how-to-use-terminal.html" class="read-more" aria-label="Read more about Terminal usage">Read More</a>
       </article>
 
       <!-- DevOps Post -->
       <article class="blog-card">
-        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="DevOps tools and pipeline image">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="DevOps tools and pipeline">
         <h3><a href="./post/understanding-devops.html">Understanding DevOps: A Beginner’s Guide</a></h3>
         <p class="post-meta">Published: July 15, 2025 | Tags: DevOps, Beginner</p>
-        <a href="./post/understanding-devops.html" class="read-more">Read More</a>
+        <a href="./post/understanding-devops.html" class="read-more" aria-label="Read more about DevOps">Read More</a>
       </article>
 
     </section>
@@ -77,12 +91,14 @@
     <h2>Connect with Me</h2>
     <p>
       Find more of my work on 
-      <a href="https://github.com/Philipdev-techy" target="_blank" aria-label="Visit my GitHub profile">GitHub</a> or connect professionally on 
-      <a href="https://linkedin.com/in/philip-atabo-3a279828a" target="_blank" aria-label="Visit my LinkedIn profile">LinkedIn</a>.
+      <a href="https://github.com/Philipdev-techy" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">GitHub</a> or connect professionally on 
+      <a href="https://linkedin.com/in/philip-atabo-3a279828a" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">LinkedIn</a>.
     </p>
-    <a href="mailto:philipdeveloper96@gmail.com" onclick="gtag('event', 'contact_click', {event_category: 'engagement', event_label: 'email_footer'});">
-      philipdeveloper96@gmail.com
-    </a>
+    <p>
+      <a href="mailto:philipdeveloper96@gmail.com" onclick="gtag('event', 'contact_click', {event_category: 'engagement', event_label: 'email_footer'});">
+        philipdeveloper96@gmail.com
+      </a>
+    </p>
   </footer>
 
   <!-- JavaScript -->
