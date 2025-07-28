@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Blog Posts | FixWithPhil - DevOps, Linux & Terminal Guides</title>
+  <title>FixWithPhil Blog | DevOps, Linux & Terminal Tips</title>
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -12,8 +12,8 @@
 
   <!-- Meta Tags -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore helpful blog posts on Linux, Terminal, and DevOps for beginners at FixWithPhil. Learn commands, tips, and best practices.">
-  <meta name="keywords" content="DevOps blog, Linux commands, Terminal tips, FixWithPhil, beginner guides">
+  <meta name="description" content="Explore DevOps, Linux, and Terminal tips for beginners on FixWithPhil.">
+  <meta name="keywords" content="FixWithPhil, DevOps blog, Linux commands, Terminal, beginner-friendly">
   <meta name="author" content="Philip Atabo">
 
   <!-- Styles -->
@@ -27,61 +27,85 @@
     gtag('js', new Date());
     gtag('config', 'G-4P7WHWV6CE');
   </script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "FixWithPhil Blog",
+    "url": "https://fixwithphil.com/blog.html",
+    "description": "Explore DevOps, Linux, and Terminal tips for beginners on FixWithPhil.",
+    "author": {
+      "@type": "Person",
+      "name": "Philip Atabo"
+    }
+  }
+  </script>
 </head>
+
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar" aria-label="Main navigation">
-    <a href="index.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'});">Home</a>
-    <a href="about.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'About'});">About</a>
-    <a href="resume.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Resume'});">Resume</a>
-    <a href="blog.html" aria-current="page">Blog</a>
-    <a href="projects.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Projects'});">Projects</a>
-    <a href="contact.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'});">Contact</a>
-    <button onclick="toggleDarkMode(); gtag('event', 'toggle_dark_mode', {event_category: 'interaction'});" class="dark-toggle" aria-label="Toggle dark mode">🌙 Toggle Dark Mode</button>
-  </nav>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="blog.html" aria-current="page">Blog</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="toggleDarkMode();" class="dark-toggle" aria-label="Toggle dark mode">🌙 Toggle Dark Mode</button>
+    </nav>
+  </header>
 
-  <!-- Main Content -->
-  <main style="padding: 20px;">
-    <h1 class="center-text">📘 Blog Posts</h1>
+  <!-- Main Blog Section -->
+  <main>
+    <section style="padding: 20px;">
+      <h1 class="center-text">📘 Blog Posts</h1>
 
-    <!-- Blog Search -->
-    <input 
-      type="text" 
-      id="searchInput" 
-      placeholder="🔍 Search blog posts..." 
-      onkeyup="filterPosts()" 
-      class="search-input" 
-      aria-label="Search blog posts"
-    >
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="🔍 Search blog posts..." 
+        onkeyup="filterPosts()" 
+        class="search-input" 
+        aria-label="Search blog posts"
+      >
 
-    <!-- Blog Entries -->
-    <section class="blog-list" aria-label="List of blog posts">
+      <section class="blog-list" aria-label="Blog articles">
+        <!-- Blog Post 1 -->
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1614064548237-096f735f344f?auto=format&fit=crop&w=800&q=80" alt="Illustration of a Linux terminal interface">
+          <h3><a href="./post/Linux-Commands.html">10 Linux Commands Every Beginner Should Know</a></h3>
+          <p class="post-meta">Published: July 10, 2025 | Tags: Linux, Commands</p>
+          <a href="./post/Linux-Commands.html" class="read-more" aria-label="Read about Linux Commands">Read More</a>
+        </article>
 
-      <!-- Linux Commands Post -->
-      <article class="blog-card">
-        <img src="https://images.unsplash.com/photo-1614064548237-096f735f344f?auto=format&fit=crop&w=800&q=80" alt="Linux terminal illustration">
-        <h3><a href="./post/Linux-Commands.html">10 Linux Commands Every Beginner Should Know</a></h3>
-        <p class="post-meta">Published: July 10, 2025 | Tags: Linux, Commands</p>
-        <a href="./post/Linux-Commands.html" class="read-more" aria-label="Read more about Linux Commands">Read More</a>
-      </article>
+        <!-- Blog Post 2 -->
+        <article class="blog-card">
+          <img src="https://cdn.pixabay.com/photo/2014/12/30/05/42/source-code-583537_1280.jpg" alt="Code displayed in a terminal window">
+          <h3><a href="./post/how-to-use-terminal.html">How to Use Terminal Like a Pro</a></h3>
+          <p class="post-meta">Published: July 12, 2025 | Tags: Terminal, Tips</p>
+          <a href="./post/how-to-use-terminal.html" class="read-more" aria-label="Read about using Terminal">Read More</a>
+        </article>
 
-      <!-- Terminal Post -->
-      <article class="blog-card">
-        <img src="https://cdn.pixabay.com/photo/2014/12/30/05/42/source-code-583537_1280.jpg" alt="Source code on terminal">
-        <h3><a href="./post/how-to-use-terminal.html">How to Use Terminal Like a Pro</a></h3>
-        <p class="post-meta">Published: July 12, 2025 | Tags: Terminal, Tips</p>
-        <a href="./post/how-to-use-terminal.html" class="read-more" aria-label="Read more about Terminal usage">Read More</a>
-      </article>
+        <!-- Blog Post 3 -->
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="DevOps tools and CI/CD pipeline concept">
+          <h3><a href="./post/understanding-devops.html">Understanding DevOps: A Beginner’s Guide</a></h3>
+          <p class="post-meta">Published: July 15, 2025 | Tags: DevOps, Beginner</p>
+          <a href="./post/understanding-devops.html" class="read-more" aria-label="Read about DevOps">Read More</a>
+        </article>
 
-      <!-- DevOps Post -->
-      <article class="blog-card">
-        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="DevOps tools and pipeline">
-        <h3><a href="./post/understanding-devops.html">Understanding DevOps: A Beginner’s Guide</a></h3>
-        <p class="post-meta">Published: July 15, 2025 | Tags: DevOps, Beginner</p>
-        <a href="./post/understanding-devops.html" class="read-more" aria-label="Read more about DevOps">Read More</a>
-      </article>
-
+        <!-- Blog Post 4 -->
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="DevOps tools and CI/CD pipeline concept">
+          <h3><a href="./post/ci-cd-beginners-guide.html">What is CI/CD? A Beginner's Guide</a></h3>
+          <p class="post-meta">Published: July 27, 2025 | Tags: DevOps, Beginner</p>
+          <a href="./post/ci-cd-beginners-guide.html" class="read-more" aria-label="Read about DevOps">Read More</a>
+        </article>
+      </section>
     </section>
   </main>
 
@@ -91,17 +115,15 @@
     <h2>Connect with Me</h2>
     <p>
       Find more of my work on 
-      <a href="https://github.com/Philipdev-techy" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">GitHub</a> or connect professionally on 
-      <a href="https://linkedin.com/in/philip-atabo-3a279828a" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">LinkedIn</a>.
+      <a href="https://github.com/Philipdev-techy" target="_blank" rel="noopener noreferrer">GitHub</a> or connect on 
+      <a href="https://linkedin.com/in/philip-atabo-3a279828a" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
     </p>
     <p>
-      <a href="mailto:philipdeveloper96@gmail.com" onclick="gtag('event', 'contact_click', {event_category: 'engagement', event_label: 'email_footer'});">
-        philipdeveloper96@gmail.com
-      </a>
+      <a href="mailto:philipdeveloper96@gmail.com">philipdeveloper96@gmail.com</a>
     </p>
   </footer>
 
-  <!-- JavaScript -->
+  <!-- Scripts -->
   <script>
     function filterPosts() {
       const input = document.getElementById('searchInput').value.toLowerCase();
@@ -122,6 +144,5 @@
       }
     };
   </script>
-
 </body>
 </html>

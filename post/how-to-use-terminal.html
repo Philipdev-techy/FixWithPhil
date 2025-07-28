@@ -3,57 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>How to Use Terminal Like a Pro</title>
-  <meta name="description" content="Learn powerful terminal commands to boost your productivity as a tech beginner." />
+  <title>How to Use the Terminal Like a Pro | FixWithPhil</title>
+  
+  <meta name="description" content="Master essential terminal commands that boost productivity. A beginner-friendly guide for aspiring tech professionals." />
   <link rel="stylesheet" href="../src/css/style.css" />
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P7WHWV6CE"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-4P7WHWV6CE');
   </script>
 </head>
 <body>
 
+  <!-- Navigation Bar -->
   <nav style="background-color: #0d6efd; padding: 10px; text-align: center;">
-    <a href="../index.html" style="color: white; margin: 0 10px;"
-       onclick="gtag('event', 'click', { 'event_category': 'navigation', 'event_label': 'Home' });">Home</a>
-    <a href="../about.html" style="color: white; margin: 0 10px;"
-       onclick="gtag('event', 'click', { 'event_category': 'navigation', 'event_label': 'About' });">About</a>
-    <a href="../resume.html" style="color: white; margin: 0 10px;"
-       onclick="gtag('event', 'click', { 'event_category': 'navigation', 'event_label': 'Resume' });">Resume</a>
-    <a href="../blog.html" style="color: white; margin: 0 10px;"
-       onclick="gtag('event', 'click', { 'event_category': 'navigation', 'event_label': 'Blog' });">Blog</a>
-    <a href="../contact.html" style="color: white; margin: 0 10px;"
-       onclick="gtag('event', 'click', { 'event_category': 'navigation', 'event_label': 'Contact' });">Contact</a>
+    <a href="../index.html" style="color: white; margin: 0 10px;" onclick="gtag('event', 'click', { 'event_category': 'navigation', 'event_label': 'Home' });">Home</a>
+    <a href="../about.html" style="color: white; margin: 0 10px;" onclick="gtag('event', 'click', { 'event_category': 'navigation', 'event_label': 'About' });">About</a>
+    <a href="../resume.html" style="color: white; margin: 0 10px;" onclick="gtag('event', 'click', { 'event_category': 'navigation', 'event_label': 'Resume' });">Resume</a>
+    <a href="../blog.html" style="color: white; margin: 0 10px;" onclick="gtag('event', 'click', { 'event_category': 'navigation', 'event_label': 'Blog' });">Blog</a>
+    <a href="../contact.html" style="color: white; margin: 0 10px;" onclick="gtag('event', 'click', { 'event_category': 'navigation', 'event_label': 'Contact' });">Contact</a>
   </nav>
 
+  <!-- Main Blog Content -->
   <main style="padding: 20px; max-width: 800px; margin: auto;">
-    <h1>How to Use Terminal Like a Pro</h1>
-    <img src="../src/images/select-profile-dropdown.png" alt="Terminal Example"
-         style="max-width:100%; border-radius: 8px;" />
+    <h1>How to Use the Terminal Like a Pro</h1>
 
-    <p><em>Posted on July 12, 2025</em></p>
+    <img src="../src/images/select-profile-dropdown.png" alt="Terminal Example Screenshot" style="max-width:100%; border-radius: 8px; margin-top: 10px;" />
 
-    <p>The terminal is one of the most powerful tools in tech. Whether you're using Ubuntu, macOS, or even WSL on Windows, these tips will help you feel in control:</p>
+    <p><em>📅 Posted on July 12, 2025 by Philip Atabo</em></p>
+
+    <p>
+      The terminal is one of the most powerful tools for developers, sysadmins, and anyone in tech. Whether you're using Ubuntu, macOS, or WSL on Windows, mastering the terminal will help you work faster and smarter.
+    </p>
+
+    <h2>💡 Essential Terminal Commands</h2>
+
+    <p>Here are some beginner-friendly but powerful terminal tips that can make a big difference:</p>
 
     <ul>
-      <li>Use <code>clear</code> to clean the screen</li>
-      <li>Use <code>history</code> to view past commands</li>
-      <li>Use <code>!!</code> to repeat the last command</li>
-      <li>Use <code>Ctrl + R</code> to search past commands</li>
-      <li>Try creating aliases for long commands</li>
+      <li><code>clear</code> — Clears your terminal screen for a fresh start.</li>
+      <li><code>history</code> — Shows a list of all previously used commands.</li>
+      <li><code>!!</code> — Repeats your last command (great for reruns after adding <code>sudo</code>).</li>
+      <li><code>Ctrl + R</code> — Opens a reverse search to find past commands quickly.</li>
+      <li><strong>Aliases</strong> — Create shortcuts for long or frequently used commands. Example:<br>
+        <code>alias gs="git status"</code></li>
     </ul>
 
-    <div class="post-nav" style="margin-top: 30px;">
-      <a href="Linux-Commands.html" class="prev" 
-         onclick="gtag('event', 'click', { 'event_category': 'post_navigation', 'event_label': 'Previous - Linux Commands' });">← Previous</a>
-      |
-      <a href="understanding-devops.html" class="next"
-         onclick="gtag('event', 'click', { 'event_category': 'post_navigation', 'event_label': 'Next - Understanding DevOps' });">Next →</a>
+    <p>With just a few commands and shortcuts, you can navigate, automate, and troubleshoot your system more effectively.</p>
+
+    <h2>📌 Why It Matters</h2>
+    <p>
+      Mastering the terminal is not just for "Linux pros" — it's for anyone who wants to control their system with speed and confidence. As you progress into DevOps or cloud computing, terminal skills become essential.
+    </p>
+
+    <div class="post-nav" style="margin-top: 40px;">
+      <a href="Linux-Commands.html" class="prev" onclick="gtag('event', 'click', { 'event_category': 'post_navigation', 'event_label': 'Previous - Linux Commands' });">← Previous Post: Linux Basics</a>
+      &nbsp;|&nbsp;
+      <a href="understanding-devops.html" class="next" onclick="gtag('event', 'click', { 'event_category': 'post_navigation', 'event_label': 'Next - Understanding DevOps' });">Next Post: Understanding DevOps →</a>
     </div>
   </main>
 
