@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FixWithPhil</title>
     <link>https://www.fixwithphil.com/</link>
     <description>Tech tutorials, DevOps insights, and coding tips by Philip Atabo.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Jul 2025 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Jul 2025 12:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.fixwithphil.com/rss.xml" rel="self" type="application/rss+xml" />
 
     <item>
       <title>Understanding DevOps: A Beginner’s Guide</title>
       <link>https://www.fixwithphil.com/blog.html#devops-guide</link>
       <description>A beginner-friendly introduction to DevOps practices, tools, and mindset.</description>
-      <pubDate>Tue, 15 Jul 2025 12:00:00 GMT</pubDate>
+      <pubDate>Tue, 15 Jul 2025 12:00:00 +0000</pubDate>
       <guid>https://www.fixwithphil.com/blog.html#devops-guide</guid>
     </item>
 
@@ -20,7 +20,7 @@
       <title>Linux Basics for Beginners</title>
       <link>https://www.fixwithphil.com/blog.html#linux-basics</link>
       <description>Learn essential Linux commands every DevOps or backend engineer should know.</description>
-      <pubDate>Tue, 22 Jul 2025 12:00:00 GMT</pubDate>
+      <pubDate>Tue, 22 Jul 2025 12:00:00 +0000</pubDate>
       <guid>https://www.fixwithphil.com/blog.html#linux-basics</guid>
     </item>
 
@@ -28,7 +28,7 @@
       <title>How to Use Terminal Like a Pro</title>
       <link>https://www.fixwithphil.com/blog.html#terminal-tips</link>
       <description>Master your terminal workflow with tips and tricks for productivity.</description>
-      <pubDate>Sun, 27 Jul 2025 12:00:00 GMT</pubDate>
+      <pubDate>Sun, 27 Jul 2025 12:00:00 +0000</pubDate>
       <guid>https://www.fixwithphil.com/blog.html#terminal-tips</guid>
     </item>
 
@@ -36,7 +36,7 @@
       <title>CI/CD for Beginners</title>
       <link>https://www.fixwithphil.com/post/ci-cd-beginners-guide.html#ci-cd-beginners-tips</link>
       <description>A simple guide to understanding continuous integration and delivery pipelines.</description>
-      <pubDate>Sun, 27 Jul 2025 12:00:00 GMT</pubDate>
+      <pubDate>Sun, 27 Jul 2025 12:00:00 +0000</pubDate>
       <guid>https://www.fixwithphil.com/post/ci-cd-beginners-guide.html#ci-cd-beginners-tips</guid>
     </item>
 
