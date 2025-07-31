@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is an RJ45 Connector?</title>
+  <meta name="description" content="Understand RJ45 connectors, their components, categories, types, wiring standards, and how to crimp them in Ethernet networks." />
+  <link rel="stylesheet" href="../src/css/style.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4P7WHWV6CE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4P7WHWV6CE');
+  </script>
+  <style>
+    /* rj45-connection */
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #0d6efd;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 6px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f0f8ff;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 20px;
+}
+
+/* Navigation */
+nav {
+  background-color: #0d6efd;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Post meta */
+em {
+  color: #666;
+}
+
+/* Post Navigation */
+.post-nav {
+  margin-top: 40px;
+}
+
+.post-nav a {
+  color: #0d6efd;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+  </style>
+</head>
+<body>
+  <nav class="nav-bar">
+    <a href="../index.html">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../resume.html">Resume</a>
+    <a href="../blog.html">Blog</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+
+  <main class="content">
+    <article class="blog-post">
+      <h1>What is an RJ45 Connector?</h1>
+      <p class="post-date">Posted on July 31, 2025</p>
+      <p>The <strong>RJ45 connector</strong> is a standardized interface used mainly in Ethernet networks to connect devices like computers, routers, and switches. It's known for its reliability, easy installation, and cost-effectiveness—making it vital in modern networking.</p>
+      <img src="/src/images/rj45-connector.webp" alt="RJ45 Connector" class="responsive-img" />
+
+      <h2>🧩 Components of RJ45 Connectors</h2>
+      <p>RJ45 connectors typically consist of:</p>
+      <ul>
+        <li>Plastic housing (usually polycarbonate)</li>
+        <li>8 metal contacts made of nickel- and gold-plated phosphor bronze</li>
+      </ul>
+      <p>They may have <strong>2-prong</strong> (for stranded wires) or <strong>3-prong</strong> contacts (better for both stranded and solid wires).</p>
+
+      <h2>📊 RJ45 Categories</h2>
+      <p>RJ45 connectors must match the category of the cable for compatibility:</p>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr><th>Category</th><th>Frequency</th><th>Speed</th><th>Use Case</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CAT5E</td><td>100 MHz</td><td>1 Gbps</td><td>Homes, small offices</td></tr>
+            <tr><td>CAT6</td><td>250 MHz</td><td>1 Gbps</td><td>Medium businesses</td></tr>
+            <tr><td>CAT6A</td><td>500 MHz</td><td>10 Gbps</td><td>Enterprises, data centers</td></tr>
+            <tr><td>CAT7</td><td>600 MHz</td><td>10 Gbps</td><td>High-speed, high-density use</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>🔧 RJ45 Connector Types</h2>
+
+      <h3>By Shielding</h3>
+      <ul>
+        <li><strong>Unshielded (UTP):</strong> No EMI protection, more affordable.</li>
+        <img src="/src/images/unshielded.webp" alt="Unshielded RJ45" class="responsive-img" />
+        <li><strong>Shielded (STP):</strong> Extra shielding to reduce signal interference.</li>
+        <img src="/src/images/shielded.webp" alt="Shielded RJ45" class="responsive-img" />
+      </ul>
+
+      <h3>By Structure</h3>
+      <ul>
+        <li><strong>Non Pass-Through:</strong> Wires don’t extend through the end. Needs careful trimming.</li>
+        <li><strong>Pass-Through:</strong> Wires pass through for easier alignment and crimping.</li>
+      </ul>
+
+      <h3>By Installation Method</h3>
+      <ul>
+        <li><strong>Standard:</strong> Requires a crimping tool.</li>
+        <li><strong>Toolless:</strong> No tools needed—great for quick jobs or temporary setups.</li>
+      </ul>
+
+      <h2>🔌 Wiring Standards</h2>
+      <p>There are two main wiring schemes for RJ45:</p>
+      <ul>
+        <li><strong>T568A</strong></li>
+        <li><strong>T568B</strong> (most common)</li>
+      </ul>
+      <p>Both are compatible if used consistently on both ends.</p>
+      <img src="/src/images/t568a-t568b-wiring-standard.webp" alt="RJ45 Wiring Standards" class="responsive-img" />
+
+      <h2>🛠️ How to Crimp an RJ45 Connector</h2>
+      <p>If you're unsure how to crimp a standard RJ45, many tutorials and tools are available online to walk you through it. A typical process includes:</p>
+      <ol>
+        <li>Strip the cable jacket</li>
+        <li>Align wires by color code (T568A or T568B)</li>
+        <li>Insert into connector</li>
+        <li>Crimp with appropriate tool</li>
+      </ol>
+
+      <h2>🌐 Applications</h2>
+      <p>RJ45 connectors are critical for achieving fast, stable data transmission in homes, offices, enterprises, and data centers.</p>
+
+      <div class="post-nav">
+        <a href="what-is-ci-cd.html" class="prev"
+          onclick="gtag('event', 'click', { 'event_category': 'post_navigation', 'event_label': 'Previous - What is CI/CD?' });">← Previous</a>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
