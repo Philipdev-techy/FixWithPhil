@@ -47,26 +47,35 @@
   </script>
 </head>
 <body>
+
   <!-- Navigation -->
-  <nav class="navbar" aria-label="Main navigation">
+  <nav class="navbar" aria-label="Main Navigation">
     <a href="index.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'});">Home</a>
     <a href="about.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'About'});">About</a>
     <a href="resume.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Resume'});">Resume</a>
-    <a href="blog.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Blog'});">Blog</a>
-    <a href="projects.html" aria-current="page" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Projects'});">Projects</a>
+
+    <div class="dropdown">
+      <a href="blog.html" class="dropbtn" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Blog'});">Blog ▾</a>
+      <div class="dropdown-content">
+        <a href="blog.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Blog All'});">All Posts</a>
+        <a href="./networking/networking.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Networking'});">Networking</a>
+      </div>
+    </div>
+
+    <a href="projects.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Projects'});">Projects</a>
     <a href="contact.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'});">Contact</a>
-    <button onclick="toggleDarkMode(); gtag('event', 'toggle_dark_mode', {event_category: 'interaction'});" class="dark-toggle" aria-label="Toggle dark mode">🌙 Toggle Dark Mode</button>
+    <button onclick="toggleDarkMode(); gtag('event', 'toggle_dark_mode', {event_category: 'interaction'});" aria-label="Toggle Dark Mode">🌙</button>
   </nav>
 
   <!-- Header -->
-  <header style="text-align: center; padding: 2rem;">
+  <header class="page-header">
     <h1>🛠️ My Projects</h1>
     <p>Here are some of the projects I've built and contributed to as I grow in tech.</p>
   </header>
 
   <!-- Main Content -->
-  <main style="padding: 2rem;">
-    <section>
+  <main class="project-main">
+    <section class="project-card">
       <h2>📘 FixWithPhil Blog</h2>
       <p>I simplify Linux and DevOps concepts to help beginners navigate the tech world confidently.</p>
       <a href="blog.html" aria-label="Visit FixWithPhil blog"
@@ -74,7 +83,7 @@
          ➜ Explore the Blog</a>
     </section>
 
-    <section>
+    <section class="project-card">
       <h2>📜 Bash Scripts</h2>
       <p>Collection of scripts to automate Linux tasks like updates, backups, and permission handling.</p>
       <a href="https://github.com/Philipdev-techy/bash-scripts" target="_blank" aria-label="View Bash scripts on GitHub"
@@ -82,7 +91,7 @@
          ➜ View on GitHub</a>
     </section>
 
-    <section>
+    <section class="project-card">
       <h2>🚀 DevOps Practice Projects</h2>
       <p>Hands-on projects using Docker, Linux CLI, and CI/CD tools to apply DevOps principles.</p>
       <a href="https://github.com/Philipdev-techy/devops-practice" target="_blank" aria-label="View DevOps projects on GitHub"
@@ -92,7 +101,7 @@
   </main>
 
   <!-- Footer -->
-  <footer style="text-align: center; padding: 2rem;">
+  <footer class="site-footer">
     <p>© 2025 FixWithPhil. All rights reserved.</p>
     <p>
       <a href="https://github.com/philipdev-techy" target="_blank" aria-label="GitHub profile"

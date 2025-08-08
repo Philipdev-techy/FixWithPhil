@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is an IP Address? - FixWithPhil</title>
+  <meta name="description" content="A beginner-friendly guide to IP addresses. Learn the difference between IPv4 and IPv6, public and private IPs, and how to find your own IP.">
+  <link rel="stylesheet" href="/src/css/style.css" />
+  <link rel="canonical" href="https://fixwithphil.com/ip-address-basics.html" />
+</head>
+
+<body>
+   <nav class="navbar" aria-label="Main Navigation">
+  <a href="/index.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'});">Home</a>
+  <a href="about.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'About'});">About</a>
+  <a href="resume.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Resume'});">Resume</a>
+
+  <div class="dropdown">
+    <a href="blog.html" class="dropbtn" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Blog'});">Blog ▾</a>
+    <div class="dropdown-content">
+      <a href="blog.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Blog All'});">All Posts</a>
+      <a href="./networking/networking.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Networking'});">Networking</a>
+    </div>
+  </div>
+
+  <a href="projects.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Projects'});">Projects</a>
+  <a href="contact.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'});">Contact</a>
+  <button onclick="toggleDarkMode(); gtag('event', 'toggle_dark_mode', {event_category: 'interaction'});" aria-label="Toggle Dark Mode">🌙</button>
+</nav>
+
+  <main class="blog-post" style="padding: 2rem;">
+    <h1>What Is an IP Address? A Beginner’s Guide</h1>
+    <p><em>Published: July 31, 2025 • Category: Networking</em></p>
+
+    <p>An <strong>IP address (Internet Protocol address)</strong> is like your device’s home address on the internet or local network. It helps data know where to go — just like a letter needs a destination.</p>
+
+    <h2>📌 What Does an IP Address Look Like?</h2>
+    <p>The most common format is <strong>IPv4</strong> — four numbers separated by dots, like <code>192.168.1.1</code>.</p>
+    <p>There’s also <strong>IPv6</strong>, a newer format made of hexadecimal numbers, like <code>2001:0db8:85a3:0000:0000:8a2e:0370:7334</code>.</p>
+
+    <h2>🌍 Public vs. Private IPs</h2>
+    <ul>
+      <li><strong>Public IP:</strong> The address your router uses to connect to the internet.</li>
+      <li><strong>Private IP:</strong> Internal address used inside your local network (e.g. <code>192.168.x.x</code> or <code>10.x.x.x</code>).</li>
+    </ul>
+
+    <h2>🔎 How to Find Your IP Address</h2>
+    <ul>
+      <li>📱 On mobile: Go to Settings → Wi-Fi → tap the connection → see IP details.</li>
+      <li>💻 On Windows: Open Command Prompt and type <code>ipconfig</code>.</li>
+      <li>🐧 On Linux/macOS: Use <code>ifconfig</code> or <code>ip addr</code>.</li>
+      <li>🌐 Online: Visit <a href="https://whatismyipaddress.com" target="_blank">whatismyipaddress.com</a>.</li>
+    </ul>
+
+    <h2>🛠️ Why It Matters</h2>
+    <p>IP addresses are essential for:</p>
+    <ul>
+      <li>Network troubleshooting</li>
+      <li>Port forwarding</li>
+      <li>Blocking unwanted traffic</li>
+      <li>Connecting devices (SSH, ping, etc.)</li>
+    </ul>
+
+    <p>📌 <strong>Coming up next:</strong> How DNS Works — turning names into numbers.</p>
+
+    <p>Got questions? <a href="contact.html">Reach out</a> or drop a message!</p>
+  </main>
+
+  <footer class="site-footer" style="text-align: center; padding: 2rem;">
+    <p>&copy; 2025 FixWithPhil. All rights reserved.</p>
+    <p>
+      <a href="https://github.com/Philipdev-techy" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/philip-atabo-3a279828a" target="_blank">LinkedIn</a> |
+      <a href="mailto:philipdeveloper96@gmail.com">Email Me</a>
+    </p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    }
+
+    window.onload = () => {
+      if (localStorage.getItem('darkMode') === 'true') {
+        document.body.classList.add('dark-mode');
+      }
+    };
+  </script>
+</body>
+</html>

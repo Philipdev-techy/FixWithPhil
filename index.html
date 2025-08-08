@@ -50,14 +50,23 @@
 <body>
 
   <nav class="navbar" aria-label="Main Navigation">
-    <a href="index.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'});">Home</a>
-    <a href="about.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'About'});">About</a>
-    <a href="resume.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Resume'});">Resume</a>
-    <a href="blog.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Blog'});">Blog</a>
-    <a href="projects.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Projects'});">Projects</a>
-    <a href="contact.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'});">Contact</a>
-    <button onclick="toggleDarkMode(); gtag('event', 'toggle_dark_mode', {event_category: 'interaction'});" aria-label="Toggle Dark Mode">🌙</button>
-  </nav>
+  <a href="index.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'});">Home</a>
+  <a href="about.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'About'});">About</a>
+  <a href="resume.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Resume'});">Resume</a>
+
+  <div class="dropdown">
+    <a href="blog.html" class="dropbtn" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Blog'});">Blog ▾</a>
+    <div class="dropdown-content">
+      <a href="blog.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Blog All'});">All Posts</a>
+      <a href="./networking/networking.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Networking'});">Networking</a>
+    </div>
+  </div>
+
+  <a href="projects.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Projects'});">Projects</a>
+  <a href="contact.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'});">Contact</a>
+  <button onclick="toggleDarkMode(); gtag('event', 'toggle_dark_mode', {event_category: 'interaction'});" aria-label="Toggle Dark Mode">🌙</button>
+</nav>
+
 
   <header style="text-align: center; padding: 2rem;">
     <h1>FixWithPhil</h1>
@@ -78,6 +87,12 @@
         <li><a href="devops-guide.html" onclick="gtag('event', 'blog_click', {event_category: 'blog', event_label: 'DevOps Guide'});">Understanding DevOps: A Beginner's Guide</a></li>
       </ul>
     </section>
+    <section class="featured">
+  <h2>📡 Featured Guide: Networking 101</h2>
+  <p>Start learning about IPs, routers, DNS, and more with this beginner-friendly networking guide.</p>
+  <a href="./networking/networking.html" class="btn">Read Now</a>
+</section>
+
   </main>
 
   <footer class="site-footer" style="text-align: center; padding: 2rem;">

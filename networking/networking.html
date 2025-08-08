@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn networking fundamentals with FixWithPhil. Understand IPs, DNS, routers, tools, and more for beginners.">
+  <title>Networking 101 – FixWithPhil</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+  <header>
+  <nav class="navbar" aria-label="Main Navigation">
+  <a href="/index.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'});">Home</a>
+  <a href="/about.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'About'});">About</a>
+  <a href="/resume.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Resume'});">Resume</a>
+
+  <div class="dropdown">
+    <a href="/blog.html" class="dropbtn" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Blog'});">Blog ▾</a>
+    <div class="dropdown-content">
+      <a href="/blog.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Blog All'});">All Posts</a>
+      <a href="/networking/networking.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Networking'});">Networking</a>
+    </div>
+  </div>
+
+  <a href="/projects.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Projects'});">Projects</a>
+  <a href="/contact.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'});">Contact</a>
+  <button onclick="toggleDarkMode(); gtag('event', 'toggle_dark_mode', {event_category: 'interaction'});" aria-label="Toggle Dark Mode">🌙</button>
+</nav>
+  </header>
+
+  <main class="container">
+  <section class="hero">
+    <h1>Networking 101: A Beginner's Guide</h1>
+    <img src="/src/images/ChatGPT Image Jul 31, 2025, 07_09_50 PM.png" alt="Networking 101 Cover" style="width: 100%; border-radius: 12px;">
+    <p>Welcome to the Networking section of FixWithPhil! This guide helps beginners understand how devices connect, communicate, and stay secure — from IP addressing to routers and cables.</p>
+  </section>
+<!-- Place this just AFTER the </section> of the hero block -->
+<section class="networking-topics">
+  <h2>📌 Networking Topics</h2>
+  <div class="card-grid">
+    <a href="ip-address.html" class="card">
+      <h3>IP Addressing</h3>
+      <p>Understand IPv4, IPv6, and private/public addressing.</p>
+    </a>
+    <a href="#" class="card">
+      <h3>DNS Basics</h3>
+      <p>How domain names translate into IPs using DNS.</p>
+    </a>
+    <a href="#" class="card">
+      <h3>Subnetting</h3>
+      <p>Divide and manage your network more efficiently.</p>
+    </a>
+    <a href="#" class="card">
+      <h3>Routers & Switches</h3>
+      <p>Learn how traffic flows and devices connect.</p>
+    </a>
+    <a href="#" class="card">
+      <h3>RJ45 & Cables</h3>
+      <p>Explore Ethernet connectors, crimping, and testing.</p>
+    </a>
+  </div>
+</section>
+
+
+  <section class="tools">
+    <h2>🛠 Tools & Commands</h2>
+    <p>Here are free tools and CLI commands to get started:</p>
+    <ul>
+      <li><strong>Wireshark</strong> – Packet analysis</li>
+      <li><strong>Packet Tracer</strong> – Cisco network simulation</li>
+      <li><code>ping</code>, <code>ipconfig</code>, <code>tracert</code>, <code>ifconfig</code></li>
+    </ul>
+  </section>
+
+  <section class="gear">
+    <h2>🧰 Beginner Gear</h2>
+    <ul>
+      <li>Ethernet cables (Cat5e, Cat6)</li>
+      <li>Basic router (TP-Link, D-Link)</li>
+      <li>Network crimper + tester</li>
+    </ul>
+  </section>
+
+  <section class="tips">
+    <h2>💡 FixWithPhil Tips</h2>
+    <ul>
+      <li>Start learning with your home Wi-Fi setup.</li>
+      <li>Use <code>ping</code> daily to check connectivity.</li>
+      <li>Explore DNS using <code>nslookup</code>.</li>
+      <li>Bookmark this page — more coming soon!</li>
+    </ul>
+  </section>
+
+  <section class="cta">
+    <h3>👋 Want More?</h3>
+    <p>Follow me on <a href="https://www.linkedin.com/in/philip-atabo-3a279828a/">LinkedIn</a> or <a href="contact.html">reach out</a> for help or suggestions. New tutorials every week!</p>
+  </section>
+</main>
+
+
+  <footer>
+    <p>&copy; 2025 FixWithPhil • <a href="contact.html">Contact</a></p>
+  </footer>
+</body>
+</html>
