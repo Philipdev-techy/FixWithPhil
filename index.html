@@ -50,21 +50,22 @@
 <body>
 
   <nav class="navbar" aria-label="Main Navigation">
-  <a href="index.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'});">Home</a>
-  <a href="about.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'About'});">About</a>
-  <a href="resume.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Resume'});">Resume</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="resume.html">Resume</a>
 
   <div class="dropdown">
-    <a href="blog.html" class="dropbtn" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Blog'});">Blog ▾</a>
+    <a href="blog.html" class="dropbtn">Blog ▾</a>
     <div class="dropdown-content">
-      <a href="blog.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Blog All'});">All Posts</a>
-      <a href="./networking/networking.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Networking'});">Networking</a>
+      <a href="blog.html">All Posts</a>
+      <a href="./networking/networking.html">Networking</a>
     </div>
   </div>
 
-  <a href="projects.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Projects'});">Projects</a>
-  <a href="contact.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'});">Contact</a>
-  <button onclick="toggleDarkMode(); gtag('event', 'toggle_dark_mode', {event_category: 'interaction'});" aria-label="Toggle Dark Mode">🌙</button>
+  <a href="projects.html">Projects</a>
+  <a href="./laptop.html">Laptops</a> <!-- 🔥 New menu item -->
+  <a href="contact.html">Contact</a>
+  <button onclick="toggleDarkMode();" aria-label="Toggle Dark Mode">🌙</button>
 </nav>
 
 
@@ -98,14 +99,92 @@
   <div style="text-align:center; margin: 30px 0;">
     <h2>Need a Website?</h2>
     <p>Affordable website design starting from ₦30,000. Fast delivery within 5 days.</p>
-    <img src="./src/images/ChatGPT Image Sep 1, 2025, 02_09_19 PM.png" alt="Website Design Advert" style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2);">
-    <br><br>
+
+    <!-- Slideshow Container -->
+    <div class="slideshow-container" style="max-width:100%; position:relative; margin:auto;">
+
+      <!-- Slide 1 -->
+      <div class="mySlides fade">
+        <img src="./src/images/ChatGPT Image Sep 1, 2025, 02_09_19 PM.png" 
+             alt="Website Design Advert 1" 
+             style="width:100%; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="mySlides fade">
+        <img src="./src/images/work main.png" 
+             alt="Website Design Advert 2" 
+             style="width:100%; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="mySlides fade">
+        <img src="./src/images/laptopsell.png" 
+             alt="Website Design Advert 3" 
+             style="width:100%; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+      </div>
+
+      <!-- Next/Prev Controls -->
+      <a class="prev" onclick="plusSlides(-1)" 
+         style="cursor:pointer; position:absolute; top:50%; left:0; transform:translateY(-50%);
+                padding:16px; color:white; font-weight:bold; font-size:20px; transition:0.3s;">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)" 
+         style="cursor:pointer; position:absolute; top:50%; right:0; transform:translateY(-50%);
+                padding:16px; color:white; font-weight:bold; font-size:20px; transition:0.3s;">&#10095;</a>
+
+    </div>
+
+    <!-- Dots Navigation -->
+    <div style="text-align:center; margin-top:10px;">
+      <span class="dot" onclick="currentSlide(1)" style="cursor:pointer; height:15px; width:15px; margin:0 3px; background-color:#bbb; border-radius:50%; display:inline-block;"></span>
+      <span class="dot" onclick="currentSlide(2)" style="cursor:pointer; height:15px; width:15px; margin:0 3px; background-color:#bbb; border-radius:50%; display:inline-block;"></span>
+      <span class="dot" onclick="currentSlide(3)" style="cursor:pointer; height:15px; width:15px; margin:0 3px; background-color:#bbb; border-radius:50%; display:inline-block;"></span>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <br>
     <a href="https://wa.me/2347037534400" target="_blank" 
        style="background:#007bff; color:#fff; padding:12px 20px; border-radius:8px; text-decoration:none;">
        Contact Me on WhatsApp
     </a>
   </div>
 </section>
+
+<!-- Slideshow Script -->
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/Prev controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail dot controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].style.backgroundColor = "#bbb";
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].style.backgroundColor = "#007bff";
+}
+
+// Auto slideshow every 5 seconds
+setInterval(() => { plusSlides(1); }, 5000);
+</script>
+
 
 <!-- IT Support Services Section -->
 <section class="it-support" style="text-align:center; padding:2rem; background:#f4f4f4; border-radius:10px; margin:3rem 0;">
