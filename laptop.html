@@ -62,6 +62,32 @@
     .badge.new {
       background: #2ed573;
     }
+
+    /* Pagination Styling */
+    .pagination {
+      grid-column: 1 / -1;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .pagination a {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 8px 12px;
+      text-decoration: none;
+      color: #333;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .pagination a:hover {
+      background: #25D366;
+      color: #fff;
+    }
+    .pagination a.active {
+      background: #25D366;
+      color: #fff;
+      border-color: #25D366;
+    }
   </style>
 </head>
 <body>
@@ -78,7 +104,7 @@
   <header style="text-align:center; padding:2rem;">
     <h1>💻 Laptops for Sale</h1>
     <p>Affordable laptops with reliable performance. Contact me directly for pricing.</p>
-    <p style="color:rgb(16, 17, 16); font-weight:bold; margin-top:10px;">
+    <p style="color:rgb(8, 9, 8); font-weight:bold; margin-top:10px;">
       💡 More laptop models available on request — contact me for full stock.
     </p>
   </header>
@@ -142,12 +168,11 @@
     </div>
 
     <!-- Pagination -->
-<div class="pagination">
-  <a href="laptop.html" class="active">1</a>
-  <a href="laptop-page2.html">2</a>
-  <a href="laptop-page2.html">Next »</a>
-</div>
-
+    <div class="pagination">
+      <a href="laptop.html" class="active">1</a>
+      <a href="laptop-page2.html">2</a>
+      <a href="laptop-page2.html">Next »</a>
+    </div>
 
   </main>
 
